@@ -118,7 +118,7 @@ position: fixed;
       }
 
       &:hover {
-        background: rgba($theme-background, 0.85);
+        background: rgba($theme-background, 0.90);
 
         .block-cover .cover {
           -webkit-filter: grayscale(0);
@@ -144,7 +144,7 @@ position: fixed;
       position: absolute;
       top: 0;
       width: 100%;
-        height: 160px;
+        height: 150px;
         -webkit-mask-image: -webkit-gradient(
           linear, left center, right center, 
           color-stop(0.00,  rgba(0,0,0,0)),
