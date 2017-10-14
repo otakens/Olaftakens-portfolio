@@ -1,1 +1,149 @@
-/* You can add global styles to this file, and also import other style files */
+//theme
+$theme-color-primary: #A0BE80;
+$theme-color-secondary: #8D79A4;
+$theme-color-tertiary: #857E89;
+$theme-color-white: #F2F3F4;
+$theme-background: #282828;
+$theme-font-primary: 'Merriweather', serif;
+$theme-font-secondary: 'Noto Sans', sans-serif;
+
+//screen width
+$screen-medium: 40em;
+$screen-large: 64em;
+
+html {
+ overflow: hidden;
+}
+
+* {
+  font-family: $theme-font-secondary;
+  color: $theme-color-tertiary;
+}
+
+body {
+  background: url("/assets/img/ot-bg-01.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, .content, footer {
+  width: 80%;
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+
+header {
+position: fixed;
+  top: 0;
+  z-index: 10;
+  
+  h1 {
+    font-family: $theme-font-primary;
+    color: $theme-color-tertiary;
+    font-size: 50px;
+    border-bottom: 2px solid $theme-color-tertiary;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      padding: 0 20px;
+      display: inline-block;
+      border-left: 1px solid $theme-color-tertiary;
+
+      &:first-child {
+        padding: 0 20px 0 0;
+        border-left: none;
+      }
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+
+        a {
+          transition: color 150ms ease-out;
+
+          &:hover {
+            color: $theme-color-secondary;
+          }
+
+          &.active {
+            color: $theme-color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+
+  section {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 140px;
+    bottom: 20px;
+    overflow-y: scroll;
+    padding-right: 17px;
+    width:  calc(100% + 17px);
+
+
+    .block {
+      flex-grow: 1;
+      background: lighten($theme-background, 5%);
+      cursor: pointer;
+      transition: background 150ms ease-out;
+      min-height: 150px;
+      margin-bottom: 10px;
+
+      &:first-child {
+        margin-top: 20px;
+      }
+
+      &:hover {
+        background: lighten($theme-background, 2%);
+      }
+
+      h3 {
+        font-family: $theme-font-primary;
+        color: $theme-color-primary;
+        padding: 10px;
+        margin: 0;
+      }
+
+      p {
+        padding: 0 10px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+footer {
+  border-top: 1px solid $theme-color-tertiary;
+
+  p {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $screen-medium) {
+
+}
+
+@media screen and (min-width: $screen-large) {
+
+}
