@@ -21,7 +21,21 @@ import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: 'portfolio', component: PortfolioComponent },
-  { path: 'keendelivery', component: KeendeliveryComponent },
+  { path: 'KeenDelivery', component: KeendeliveryComponent },
+  { path: 'Perflectie', component: PerflectieComponent },
+  { path: 'MinersLife', component: MinerslifeComponent },
+  { path: 'Pangkalpinang', component: PangkalpinangComponent },
+  { path: 'Nusantara', component: NusantaraComponent },
+  { path: 'Gamepoint', component: GamepiontComponent },
+  { path: 'Nimbus', component: NimbusComponent },
+  { path: 'FrozenChaos', component: FrozenchaosComponent },
+  { path: 'TheGrey', component: ThegreyComponent },
+  { path: 'FillwithSkill', component: FillwithskillComponent },
+  { path: 'Eccky', component: EcckyComponent },
+  { path: 'LegionsofShadow', component: LegionsofshadowComponent },
+  { path: 'Velocityball', component: VelocityballComponent },
+  { path: 'Energymeter', component: EnergymeterComponent },
+  { path: 'ImpressiveInteractive', component: ImpressiveinteractiveComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'contact', component: ContactComponent }
 ];
